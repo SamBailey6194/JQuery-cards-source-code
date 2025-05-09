@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Start Server and Open Firefox",
+        "type": "shell",
+        "command": "powershell",
+        "args": [
+          "-ExecutionPolicy", "Bypass", 
+          "-File", 
+          ".vscode\\start_server_open.ps1"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "detail": "Starts Python HTTP server and opens Firefox"
+      }
+    ]
+  }
